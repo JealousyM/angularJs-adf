@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:tr="http://myfaces.apache.org/trinidad"
+          xmlns:trh="http://myfaces.apache.org/trinidad/html">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+    <trh:meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <trh:meta name="X-UA-Compatible" content="IE=edge" type="httpEquiv"/>
+ 
+        <af:document id="d1">
+        <af:resource type="css" source="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <af:resource type="css" source="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+        <af:resource type="css" source="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css"/>
+        <af:resource type="javascript" source="https://code.jquery.com/jquery-1.11.0.min.js"/>
+        <af:resource type="javascript" source="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"/>
+        <af:resource type="javascript" source="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"/>
+        <af:resource type="javascript" source="/angularApp.js"/>
+ 
+            <af:form id="f1">
+                <af:panelGroupLayout id="pgl2">
+                    <af:panelHeader text="Adf"
+                                         id="sdh1" size="0">
+ 
+                    <af:commandButton text="Click Me" id="cb1"
+                                      partialSubmit="true">
+                    </af:commandButton>
+ 
+                        <f:facet name="context"/>
+                        <f:facet name="menuBar"/>
+                        <f:facet name="toolbar"/>
+                        <f:facet name="legend"/>
+                        <f:facet name="info"/>
+                    </af:panelHeader>
+                </af:panelGroupLayout>
+                <af:panelGroupLayout layout="vertical" id="pgl11"
+                                     styleClass="#{&quot;adf:{'text':&quot;}test#{&quot;'};&quot;}">           
+                </af:panelGroupLayout>
+                <af:panelGroupLayout layout="vertical">
+                </af:panelGroupLayout>
+            </af:form>
+        </af:document>
+    </f:view>
+</jsp:root>
