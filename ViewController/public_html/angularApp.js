@@ -9,7 +9,7 @@
             replace: false,
             transclude: true,
             scope: {
-                exPanel: '='
+                adf: '='
             },
             templateUrl: 'panel.html',
             link: function($scope, element, attrs) {
